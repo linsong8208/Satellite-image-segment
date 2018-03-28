@@ -1,0 +1,1 @@
+import numpy as npa = np.arange(6)a = a.reshape((2, 3))def padwithtens(vector, pad_width, iaxis, kwargs):    print("{}, {}".format(pad_width[0], pad_width[1]))    vector[:pad_width[0]] = 10    vector[-pad_width[1]:] = 10    return vectorprint(np.lib.pad(a, 2, padwithtens))

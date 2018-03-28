@@ -1,0 +1,9 @@
+>> dirs=dir('F:/ypic/*.png');
+>>  for n=1:numel(dirs)
+strname=strcat('F:\资源\BDCI\BDCI2017-jiage-Semi\testing-测试数据/',dirs(n).name);
+img=imread(strname);
+img2 = uint8(img);
+newname=strcat('F:\资源\BDCI\BDCI2017-jiage-Semi\testing-测试数据/',dirs(n).name); 
+imwrite(img2, newname,'png');
+end
+>> 
